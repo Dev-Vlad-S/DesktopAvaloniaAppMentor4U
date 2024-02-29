@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:local="using:DesktopAvaloniaAppMentor4U.Classic.Components.InputComponents"
+             x:DataType="local:InputComponent"
+             x:Class="DesktopAvaloniaAppMentor4U.Classic.Components.InputComponents.InputComponent">
+
+  <StackPanel Orientation="Horizontal">
+    <Label Content="{Binding Path=LabelName, Mode=OneWay}"
+           Theme="{StaticResource StyleLabel}"/>
+    <TextBox Text="{Binding Path=Input}"
+             Theme="{StaticResource StyleInput}"/>
+  </StackPanel>
+
+
+</UserControl>

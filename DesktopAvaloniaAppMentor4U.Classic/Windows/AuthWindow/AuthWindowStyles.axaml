@@ -1,0 +1,82 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  
+  <!-- #region ALIGNMENT -->
+  <ControlTheme x:Key="StyleCenterAlignment" TargetType="{x:Type Control}">
+    <Setter Property="HorizontalAlignment" Value="Center"/>
+  </ControlTheme>
+  <ControlTheme x:Key="StyleRightAlignment" TargetType="{x:Type Control}">
+    <Setter Property="HorizontalAlignment" Value="Right"/>
+  </ControlTheme>
+  <ControlTheme x:Key="StyleLeftAlignment" TargetType="{x:Type Control}">
+    <Setter Property="HorizontalAlignment" Value="Left"/>
+  </ControlTheme>
+  <!-- #endregion ALIGNMENT -->
+
+  <!-- #region STACK_PANEL -->
+  <ControlTheme x:Key="StyleHeaderPanel" TargetType="{x:Type StackPanel}"
+         BasedOn="{StaticResource StyleCenterAlignment}">
+    <Setter Property="Margin" Value="20"/>
+  </ControlTheme>
+
+  <ControlTheme x:Key="StyleButtonsPanel" TargetType="{x:Type StackPanel}"
+         BasedOn="{StaticResource StyleHeaderPanel}">
+    <Setter Property="Orientation" Value="Horizontal"/>
+  </ControlTheme>
+  <!-- #endregion STACK_PANEL -->
+
+  
+  <!-- #region BUTTON -->
+  <ControlTheme x:Key="StyleButtonBase" TargetType="{x:Type Button}">
+    <Setter Property="FontSize" Value="16"/>
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="{TemplateBinding Background}"
+                Margin="{TemplateBinding Margin}"
+                Padding="{TemplateBinding Padding}"
+                CornerRadius="5">
+          <ContentPresenter Content="{TemplateBinding Content}"
+                            VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+      </ControlTemplate>
+    </Setter>
+    <Style Selector="^:pointerover">
+      <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+  </ControlTheme>
+
+  <ControlTheme x:Key="StyleButtonDefault" TargetType="{x:Type Button}"
+         BasedOn="{StaticResource StyleButtonBase}">
+    <Setter Property="Margin" Value="10 0"/>
+    <Setter Property="Padding" Value="5"/>
+    <Setter Property="Foreground" Value="White"/>
+  </ControlTheme>
+
+  <ControlTheme x:Key="StyleButtonAuth" TargetType="{x:Type Button}"
+         BasedOn="{StaticResource StyleButtonDefault}">
+    <Setter Property="Background" Value="DarkBlue"/>
+    <Style Selector="^:pointerover">
+      <Setter Property="Background" Value="Blue"/>
+    </Style>
+  </ControlTheme>
+
+  <ControlTheme x:Key="StyleButtonRestore" TargetType="{x:Type Button}"
+         BasedOn="{StaticResource StyleButtonDefault}">
+    <Setter Property="Background" Value="DarkOrange"/>
+
+    <Style Selector="^:pointerover">
+      <Setter Property="Background" Value="Orange"/>
+    </Style>
+  </ControlTheme>
+
+  <ControlTheme x:Key="StyleButtonRegister" TargetType="{x:Type Button}"
+         BasedOn="{StaticResource StyleButtonDefault}">
+    <Setter Property="Background" Value="DarkBlue"/>
+
+    <Style Selector="^:pointerover">
+      <Setter Property="Background" Value="Blue"/>
+    </Style>
+  </ControlTheme>
+  <!-- #endregion BUTTON -->
+
+</ResourceDictionary>

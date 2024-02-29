@@ -1,0 +1,14 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+ 
+  <ControlTheme x:Key="StyleLabel" TargetType="{x:Type Label}">
+    <Setter Property="Foreground" Value="Red"/>
+    <Setter Property="FontSize" Value="20"/>
+    <Setter Property="Width" Value="100"/>
+  </ControlTheme>
+
+  <ControlTheme x:Key="StyleInput" TargetType="{x:Type TextBox}">
+    <Setter Property="Width" Value="300"/>
+  </ControlTheme>
+
+</ResourceDictionary>

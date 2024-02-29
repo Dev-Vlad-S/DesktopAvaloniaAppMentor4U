@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopAvaloniaAppMentor4U.Classic", "DesktopAvaloniaAppMentor4U.Classic\DesktopAvaloniaAppMentor4U.Classic.csproj", "{DF6596B0-79CF-4633-B39A-8AAE71A6BFDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF6596B0-79CF-4633-B39A-8AAE71A6BFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6596B0-79CF-4633-B39A-8AAE71A6BFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6596B0-79CF-4633-B39A-8AAE71A6BFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6596B0-79CF-4633-B39A-8AAE71A6BFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CCCA480-796B-47AB-B61E-7D238B3A7455}
+	EndGlobalSection
+EndGlobal
